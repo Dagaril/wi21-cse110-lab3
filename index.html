@@ -21,237 +21,239 @@
     <h6>
         This is a sample website made as an intro to HTML
     </h6>
-</body>
-<main>
+    <main>
 
+        <h2>
+            Early Childhood and Personal Life
+        </h2>
+        <p>
+            I was born in <strong>St. Petersburg, Russia</strong> <s>in August of 2000</s> where I lived for the first
+            <b>7
+                years of my life.</b> In <i>2007</i> I moved to San Diego, where I have lived ever since.<br><br>
+            I have picked up numerous sports throughout my life, including:
+        </p>
+        <ul>
+            <li><a href="http://teamtouche.com">Fencing</a> (<em>By far my favorite sport</em>)</li>
+            <li>Karate</li>
+            <li>Soccer</li>
+        </ul>
+    </main>
+    <hr>
+    <div>
+        <h3>
+            Some preferences that I've developed over time:
+        </h3>
+    </div>
+    <ol>
+        <li>Sushi <img src="sushi.png" alt="Sushi imae" width="30"></li>
+        <li> Google Chrome <picture><img src="chrome.png" alt="Google Chrome Logo" width="30" /></picture>
+        </li>
+        <li> Travel
+            <iframe id="inlineFrameExample" title="Spain Map" width="300" height="200"
+                src="https://wildgooseeducation-static.myshopblocks.com/images/2018/11/contain/256x256/9fb07c9752153260809ea7c3e6481063.jpg">
+            </iframe>
+        </li>
+        <li>
+            Music
+            <figure>
+                <figcaption>Listen to a song I like:</figcaption>
+                <audio controls src="AM-505.mp3"></audio>
+            </figure>
+        </li>
+        <li> Write <code>Code</code> </li>
+    </ol>
+    Here is a fun video that I found as part of an MP4 sample repository:<br>
+    <video controls width="300">
+
+        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
+    </video>
+
+    <hr>
+    <h3>
+        Random Button?
+    </h3>
+    <button class="rando" type="button">
+        Yes.
+    </button>
+
+    <hr>
     <h2>
-        Early Childhood and Personal Life
+        Canvas with gradient drawn
     </h2>
-    <p>
-        I was born in <strong>St. Petersburg, Russia</strong> <s>in August of 2000</s> where I lived for the first <b>7
-            years of my life.</b> In <i>2007</i> I moved to San Diego, where I have lived ever since.<br><br>
-        I have picked up numerous sports throughout my life, including:
-    </p>
-    <ul>
-        <li><a href="http://teamtouche.com">Fencing</a> (<em>By far my favorite sport</em>)</li>
-        <li>Karate</li>
-        <li>Soccer</li>
-    </ul>
-</main>
-<hr>
-<div>
-    <h3>
-        Some preferences that I've developed over time:
-    </h3>
-</div>
-<ol>
-    <li>Sushi <img src="sushi.png" alt="Sushi imae" width="30"></li>
-    <li> Google Chrome <picture><img src="chrome.png" alt="Google Chrome Logo" width="30" /></picture>
-    </li>
-    <li> Travel
-        <iframe id="inlineFrameExample" title="Spain Map" width="300" height="200"
-            src="https://wildgooseeducation-static.myshopblocks.com/images/2018/11/contain/256x256/9fb07c9752153260809ea7c3e6481063.jpg">
-        </iframe>
-    </li>
-    <li>
-        Music
-        <figure>
-            <figcaption>Listen to a song I like:</figcaption>
-            <audio controls src="AM-505.mp3"></audio>
-        </figure>
-    </li>
-    <li> Write <code>Code</code> </li>
-</ol>
-Here is a fun video that I found as part of an MP4 sample repository:<br>
-<video controls width="300">
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
 
-    <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
-</video>
+            // Create gradient
+            var grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "white");
 
-<hr>
-<h3>
-    Random Button?
-</h3>
-<button class="rando" type="button">
-    Yes.
-</button>
-
-<hr>
-<h2>
-    Canvas with gradient drawn
-</h2>
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
-    <script>
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-
-        // Create gradient
-        var grd = ctx.createLinearGradient(0, 0, 200, 0);
-        grd.addColorStop(0, "red");
-        grd.addColorStop(1, "white");
-
-        // Fill with gradient
-        ctx.fillStyle = grd;
-        ctx.fillRect(10, 10, 150, 80);
-    </script>
-</canvas>
-<section>
-    <h3>
-        Code Block Followed by a Grey Circle with a Red Border
-    </h3>
-    <aside>
-        <span style="color:red"> Note: this code is meant to do absolutely nothing.</span>
-    </aside>
-    <code>
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 150, 80);
+        </script>
+    </canvas>
+    <section>
+        <h3>
+            Code Block Followed by a Grey Circle with a Red Border
+        </h3>
+        <aside>
+            <span style="color:red"> Note: this code is meant to do absolutely nothing.</span>
+        </aside>
+        <code>
         for (int i=0; i!=4; i++){}
             continue;}
         </code>
-    <svg viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
-        <circle cx="15" cy="15" r="10" />
+        <svg viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+            <circle cx="15" cy="15" r="10" />
 
-    </svg>
-</section>
-<pre>
+        </svg>
+    </section>
+    <pre>
         Some
     preformatted text
          goes here
     </pre>
 
-<form method="get">
-    <h1>
-        Please fill out the form below
-    </h1>
-    <details>
-        <summary>Where will this be used?</summary>
-        Absolutely nowhere. Thank you for asking.
-    </details>
-    <div>
-        <label for="name">Enter your name: </label>
-        <input type="text" name="name" id="name">
-    </div>
-    <div>
-        <label for="email">Enter your email: </label>
-        <input type="email" name="email" id="email">
-    </div>
-    <div>
-        <label for="position"> What is your role?</label>
-        <select id="position">
-            <optgroup label="Assistant">
-                <option>TA</option>
-                <option>IA</option>
-            </optgroup>
-            <optgroup label="Other">
-                <option>Instructor</option>
-                <option>Department Chair</option>
-                <option>Student</option>
-            </optgroup>
-        </select>
-    </div>
-    <div>
-        <label for="chkbx">I would like to be emailed with updates </label>
-        <input type="checkbox" name="chkbx" id="chkbx">
-    </div>
-    <div>
-        <label for="colour">Please select your favorite colour </label>
-        <input type="color" name="colour" id="colour">
-    </div>
-    <div>
-        <label for="date"> What is today's date? </label>
-        <input type="date" name="date" id="date">
-    </div>
-    <div>
-        <label for="file">Upload your resume here </label>
-        <input type="file" name="file" id="file">
-    </div>
-    <div>
-        <label for="num">How many fields are here?</label>
-        <input type="number" name="num" id="num">
-    </div>
-    <div>
-        <label for="pass">Create a password</label>
-        <input type="password" name="pass" id="pass">
-    </div>
-    <div>
-        <fieldset>
-            <legend>What is your favorite Mythical creature?</legend>
+    <form method="get">
+        <h1>
+            Please fill out the form below
+        </h1>
+        <details>
+            <summary>Where will this be used?</summary>
+            Absolutely nowhere. Thank you for asking.
+        </details>
+        <div>
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="position"> What is your role?</label>
+            <select id="position">
+                <optgroup label="Assistant">
+                    <option>TA</option>
+                    <option>IA</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option>Instructor</option>
+                    <option>Department Chair</option>
+                    <option>Student</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="chkbx">I would like to be emailed with updates </label>
+            <input type="checkbox" name="chkbx" id="chkbx">
+        </div>
+        <div>
+            <label for="colour">Please select your favorite colour </label>
+            <input type="color" name="colour" id="colour">
+        </div>
+        <div>
+            <label for="date"> What is today's date? </label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <label for="file">Upload your resume here </label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="num">How many fields are here?</label>
+            <input type="number" name="num" id="num">
+        </div>
+        <div>
+            <label for="pass">Create a password</label>
+            <input type="password" name="pass" id="pass">
+        </div>
+        <div>
+            <fieldset>
+                <legend>What is your favorite Mythical creature?</legend>
 
-            <input type="radio" id="unicorn" name="monster">
-            <label for="unicorn">Unicorn</label><br />
+                <input type="radio" id="unicorn" name="monster">
+                <label for="unicorn">Unicorn</label><br />
 
-            <input type="radio" id="phoenix" name="monster">
-            <label for="phoenix">Phoenix</label><br />
+                <input type="radio" id="phoenix" name="monster">
+                <label for="phoenix">Phoenix</label><br />
 
-            <input type="radio" id="pegasus" name="monster">
-            <label for="pegasus">Pegasus</label>
-        </fieldset>
-    </div>
-    <div>
-        <label for="bgInfo">Add some info about yourself:</label>
-    </div>
-    <div>
-        <textarea id="bgInfo" name="bgInfo" rows="5" cols="30"> I was born in... </textarea>
-    </div>
-    <div>
-        <label for="csClass">Choose a CS Class:</label>
-        <input list="csClasses" id="csClass" name="csClass" />
+                <input type="radio" id="pegasus" name="monster">
+                <label for="pegasus">Pegasus</label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="bgInfo">Add some info about yourself:</label>
+        </div>
+        <div>
+            <textarea id="bgInfo" name="bgInfo" rows="5" cols="30"> I was born in... </textarea>
+        </div>
+        <div>
+            <label for="csClass">Choose a CS Class:</label>
+            <input list="csClasses" id="csClass" name="csClass" />
 
-        <datalist id="csClasses">
-            <option value="101">
-            <option value="110">
-            <option value="140L">
-            <option value="140">
-            <option value="101">
-        </datalist>
+            <datalist id="csClasses">
+                <option value="101">
+                <option value="110">
+                <option value="140L">
+                <option value="140">
+                <option value="101">
+            </datalist>
 
-    </div>
-    <div>
-        <input type="reset" value="Restart">
-        <input type="submit" value="Subscribe!">
-    </div>
+        </div>
+        <div>
+            <input type="reset" value="Restart">
+            <input type="submit" value="Subscribe!">
+        </div>
 
-</form>
-<template>
-    Please don't render me until needed!
-</template>
+    </form>
+    <template>
+        Please don't render me until needed!
+    </template>
 
-<hr>
-<h2>
-    Boolean Logic Table
-</h2>
-<table>
-    <caption>2-variable boolean logic</caption>
-    <colgroup>
-        <col span="3">
-    </colgroup>
-    <tr>
-        <th scope="col">X</th>
-        <th scope="col">Y</th>
-        <th scope="col">X&&Y</th>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-</table>
+    <hr>
+    <h2>
+        Boolean Logic Table
+    </h2>
+    <table>
+        <caption>2-variable boolean logic</caption>
+        <colgroup>
+            <col span="3">
+        </colgroup>
+        <tr>
+            <th scope="col">X</th>
+            <th scope="col">Y</th>
+            <th scope="col">X&&Y</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
 
-<footer>
-    <p> Copyright Dan Magaril. Thank you for visiting.</p>
-</footer>
+    <footer>
+        <p> Copyright Dan Magaril. Thank you for visiting.</p>
+    </footer>
+</body>
+
 
 </html>
