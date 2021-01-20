@@ -6,7 +6,8 @@ body {
   h1 {
     color: white; /*Blue*/
     text-align: center;
-    text-decoration: underline
+    text-decoration: underline;
+    font-family: 'Major Mono Display', monospace;
   }
   
   p {
