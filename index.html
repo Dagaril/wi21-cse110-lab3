@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 </head>
 <style>
-  h3{
-    color: #adf;
-    background-color: rgb(27, 94, 21)
-}
+    h3 {
+        color: #adf;
+        background-color: rgb(27, 94, 21)
+    }
 </style>
 
 <body>
@@ -123,11 +123,11 @@
     preformatted text
          goes here
     </pre>
-
+    <h1>
+        Please fill out the form below
+    </h1>
     <form method="get">
-        <h1>
-            Please fill out the form below
-        </h1>
+
         <details>
             <summary>Where will this be used?</summary>
             Absolutely nowhere. Thank you for asking.
@@ -175,7 +175,7 @@
             <input type="number" name="num" id="num">
         </div>
         <div>
-            <label for="pass"  >Create a password</label>
+            <label for="pass">Create a password</label>
             <input type="password" name="pass" id="pass" style="background-color:red">
         </div>
         <div>
@@ -211,7 +211,7 @@
             </datalist>
 
         </div>
-        <div>
+        <div id="buttons">
             <input type="reset" value="Restart">
             <input type="submit" value="Subscribe!">
         </div>
@@ -220,7 +220,9 @@
     <template>
         Please don't render me until needed!
     </template>
-
+    <div class="fixed">
+        Some fixed text appears in this box!
+    </div>
     <hr>
     <h2>
         Boolean Logic Table
@@ -251,7 +253,7 @@
             <td>0</td>
         </tr>
         <tr>
-            <td>1</td>
+            <td class="hideMe">1</td>
             <td>1</td>
             <td>1</td>
         </tr>

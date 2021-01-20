@@ -8,18 +8,27 @@ body {
     text-align: center;
     text-decoration: underline;
     font-family: 'Major Mono Display', monospace;
+    font-size: 7vh;
+    position: static
   }
 
   h2 {
       color: #adff2f;
       background-color: rgba(111, 214, 245, 0.267);
+      max-width: 50%
   }
 
   
   p {
     font-family: verdana;
-    font-size: 20px;
+    font-size: 1rem;
     color: rgba(214, 173, 22, 0.863)
+  }
+
+  @media screen and (max-width: 1500px) {
+    body {
+      background-color: lightgreen;
+    }
   }
 
   div.neonYellowBG{
@@ -30,8 +39,16 @@ body {
     background-color: greenyellow;
 }
 
+video{
+    min-width: 30%;
+}
+
 a:hover{
     background-color: aquamarine;
+}
+
+a:active{
+    background-color: purple;
 }
 
   #name{
@@ -39,18 +56,42 @@ a:hover{
   }
 
   form {
-      border-style: dotted;
-      border-color: orange;
-      border-width: 3pt;
-      border-radius: 5%;
+      width: 50%;
+      height: 1000px;
+      border: 15px dotted orange;
+      margin-top: 2in;
+      margin-left: 2in;
+      margin-right: 2in;
+      margin-bottom: 2in;
+      padding-top: 1in;
+      padding-left: 1in;
+      padding-right: 1in;
+      padding-bottom: 1in;
+      grid-template-columns: min-content min-content;
+      display: grid;
+      row-gap: 5px;
+      column-gap: 2px;
+      justify-content: center;
   }
 
   
   fieldset *  {
     border-style: dashed;
     border-color: blue;
-    border-width: 1pt;
+    border-width: 2pt;
     border-radius: 0%;
+}
+
+
+
+footer{
+    margin: 1in 3in 1in 1in;
+    border: dashed green 1pt;
+    padding: 2in, 1in, 1in, 1in;
+}
+
+textarea{
+    margin: auto;
 }
 
 h2,h3{
@@ -58,7 +99,7 @@ h2,h3{
 }
 
 div label{
-    text-shadow: 2px 2px #558ABB;
+    text-shadow: .2pc .25em #558ABB;
 }
 
 h3 + button{
@@ -70,9 +111,17 @@ h3 + button{
 }
 
 table > caption{
-    border-width: 6px;
+    border-width: 3mm;
     border-color: #FFF;
     border-style:groove;
+}
+
+table {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 td ~ td{
@@ -80,3 +129,19 @@ td ~ td{
     border-color: #FFF;
     border-style:groove;
 }
+
+li{
+    display:  inline-block;
+}
+
+.hideMe{
+    display: none;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+  }
