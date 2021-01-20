@@ -1,0 +1,15 @@
+/*formatting for body*/
+body {
+    background-color: rgb(129, 84, 84);
+  }
+  
+  h1 {
+    color: white; /*Blue*/
+    text-align: center;
+    text-decoration: underline
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
