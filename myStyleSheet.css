@@ -4,13 +4,79 @@ body {
   }
   
   h1 {
-    color: white; /*Blue*/
+    color: white; /*White*/
     text-align: center;
     text-decoration: underline;
     font-family: 'Major Mono Display', monospace;
   }
+
+  h2 {
+      color: #adff2f;
+      background-color: rgba(111, 214, 245, 0.267);
+  }
+
   
   p {
     font-family: verdana;
     font-size: 20px;
+    color: rgba(214, 173, 22, 0.863)
   }
+
+  div.neonYellowBG{
+      background-color: yellow;
+  }
+
+  a[href]{
+    background-color: greenyellow;
+}
+
+a:hover{
+    background-color: aquamarine;
+}
+
+  #name{
+      background-color: red;
+  }
+
+  form {
+      border-style: dotted;
+      border-color: orange;
+      border-width: 3pt;
+      border-radius: 5%;
+  }
+
+  
+  fieldset *  {
+    border-style: dashed;
+    border-color: blue;
+    border-width: 1pt;
+    border-radius: 0%;
+}
+
+h2,h3{
+    text-align: right;
+}
+
+div label{
+    text-shadow: 2px 2px #558ABB;
+}
+
+h3 + button{
+    background-color: yellow;
+}
+
+.rando{
+    font-family: 'Major Mono Display', monospace;
+}
+
+table > caption{
+    border-width: 6px;
+    border-color: #FFF;
+    border-style:groove;
+}
+
+td ~ td{
+    border-width: 2px;
+    border-color: #FFF;
+    border-style:groove;
+}
